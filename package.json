@@ -1,6 +1,9 @@
 {
-  "name": "Movable Tic-Tac-Toe",
+  "name": "Tic-Tac-Toe",
   "version": "0.0.0",
+  "engines": {
+    "node": "4.1.1"
+   },
   "description": "A fun take on the traditional Tic-Tac-Toe game.",
   "main": "server.js",
   "repository": "",
