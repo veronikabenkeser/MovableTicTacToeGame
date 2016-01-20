@@ -1,6 +1,5 @@
 var http = require('http');
 var path = require('path');
-var async = require('async');
 var express = require('express');
 var router = express();
 var server = http.createServer(router);
@@ -11,8 +10,9 @@ router.use(express.static(path.resolve(__dirname, 'dist')));
 
 var io = sio.listen(server);
 
-server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function() {
-    console.log("Server listening...");
+var port= process.env.PORT || 3000;
+server.listen(port, function() {
+   console.log("Server listening on "+port);
 });
 
 io.on('connection', function(client) {
