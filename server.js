@@ -6,6 +6,13 @@ var server = http.createServer(router);
 var cp = require("child_process");
 var sio = require("socket.io");
 
+router.use(function(req,res,next){
+  res.setHeader('Access-Control-Allow-Origin','*');
+  res.setHeader('Access-Control-Allow-Methods','GET','POST');
+  res.setHeader('Access-Control-Allow-Headers','X-Requested-With,content-type,Authorization');
+  next();
+});
+
 router.use(express.static(path.resolve(__dirname, 'dist')));
 
 var io = sio.listen(server);
