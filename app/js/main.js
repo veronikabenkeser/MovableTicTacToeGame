@@ -12,7 +12,7 @@ require.config({
 
 require(['jquery', 'socket.io'], function($, io) {
 	$(function() {
-		var socket = io.connect('https://tic-tac-toe-final-autumncat.c9users.io/');
+		var socket = io.connect();
 		var _availArr = [];
 		var board = [
 			[1, 1],
