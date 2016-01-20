@@ -1,0 +1,356 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: black;
+  font-family: 'Fredericka the Great', cursive;
+  color:white;
+}
+
+.title {
+  font-size: 60px;
+  text-decoration: none;
+  display: block;
+  line-height: 65px;
+  color: white;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  text-align: center;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  display: flex;
+  flex-flow: column;
+  -webkit-flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  -webkit-align-items: center;
+}
+
+.all-content {
+  margin: auto;
+  text-align: center;
+}
+
+.row {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+}
+
+.row > div {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  font-size: 50px;
+  cursor: default;
+}
+
+.row div:nth-child(2) {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.row:nth-child(1) {
+  border-bottom: 2px solid white;
+}
+
+.row:nth-child(3) {
+  border-top: 2px solid white;
+}
+
+.selection:hover,
+.difficulty .level>div:hover,
+.restart p:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.highlightedX::after {
+  content: "X";
+  font-family: 'Codystar', cursive;
+  font-size: 50px;
+  color: white;
+}
+
+.highlightedO::after {
+  content: "O";
+  font-family: 'Codystar', cursive;
+  font-size: 50px;
+  color: white;
+}
+
+.rules {
+  margin: auto;
+  color: rgb(102, 255, 102);
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.note-top {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  position: absolute;
+  background: url("http://api.thumbr.it/whitenoise-361x370.png?background=##e6df78&noise=626262&density=9&opacity=15");
+  z-index: 10;
+}
+
+.note-top.right {
+  height: 21px;
+  width: 90px;
+  margin-top: -20px;
+  margin-left: 68px;
+}
+
+.note-top.left {
+  height: 40px;
+  width: 100px;
+  margin-top: -150px;
+  margin-left: 75px;
+  -moz-transform: rotate(1deg);
+  -webkit-transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+  transform: rotate(1deg);
+}
+
+.difficulty,
+.choice-bubble {
+  width: 70%;
+  height: 250px;
+  width: 250px;
+}
+
+.setting1,
+.setting2 {
+  padding-top: 100px;
+}
+
+.posted-note {
+  border: 2px solid;
+  -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+  background: #fefabc;
+  color: black;
+  font-size: 39px;
+  -moz-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  -webkit-box-shadow: 5px 5px 7px black, 0px 0px 12px 0px black;
+  -moz-box-shadow: 5px 5px 7px black, 0px 0px 12px 0px black;
+  box-shadow: 5px 5px 7px black, 0px 0px 12px 0px black;
+}
+
+.difficulty {
+  -moz-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+.difficulty p,
+.selection {
+  color: #00529B;
+  line-height: 47px;
+  margin-top: 25px;
+  padding-bottom: 20px;
+}
+
+.difficulty .level {
+  color: #00529B;
+  font-size: 25px;
+  margin-top: -45px;
+}
+
+.difficulty .level>div {
+  padding-top: 14px;
+  border-bottom: 2px solid #E6E6B8;
+}
+
+.choice-bubble>div,
+.choice-bubble>p {
+  display: block;
+  padding: 10px;
+  font-size: 30px;
+  line-height: 26px;
+  color: #00529B;
+}
+
+.choice-bubble>div {
+  font-size: 50px;
+}
+
+.choice-bubble>div:nth-child(2) {
+  padding-top: 22px;
+}
+
+.playing-page {
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.restart {
+  height: 240px;
+  width: 240px;
+  margin-top: -350px;
+  margin-left: 300px;
+  position: absolute;
+  -moz-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+.ai {
+  height: 140px;
+  display: inline;
+  vertical-align: top;
+}
+
+.message {
+  height: 45px;
+  margin-top: 10px;
+  font-size: 45px;
+  text-align: center;
+  /*color: white;*/
+}
+
+.restart .note-top {
+  position: absolute;
+  height: 30px;
+  width: 90px;
+  margin-top: -140px;
+  margin-left: 69px;
+}
+
+.restart p {
+  text-decoration: underline;
+}
+
+.selected {
+  color: red;
+}
+
+.hide {
+  display: none !important;
+}
+
+@media only screen and (max-device-width: 480px) {
+  body {
+    background-color: black;
+    color: black;
+  }
+  .row > div {
+    width: 110px;
+    height: 110px;
+    line-height: 110px;
+    font-size: 50px;
+  }
+  .difficulty,
+  .choice-bubble {
+    width: 70%;
+    height: 250px;
+    width: 250px;
+    margin-top: -40px;
+  }
+  .instructions {
+    font-size: 16px !important;
+    padding-left: 15px !important;
+    font-family: 'Changa One', sans-serif;
+    border: 4px dashed !important;
+  }
+  .close-div {
+    padding-top: 15px;
+    font-size: 24px;
+    text-align: right;
+  }
+  .restart {
+    height: 140px;
+    width: 140px;
+    margin-left: 0;
+  }
+  .restart .note-top {
+    position: absolute;
+    margin-top: -140px;
+    margin-left: 18px;
+  }
+  .message{
+    color:white;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    background: url("https://i358.photobucket.com/albums/oo27/picturesqueworlds/cb2_zpsttazoggx.jpg") no-repeat center center fixed;
+  }
+}
+
+.myButton {
+  width: 100px;
+  background-color: transparent;
+  margin: 20px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 2px dashed white;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-size: 26px;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+.myButton:hover {
+  background-color: transparent;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAH0lEQVQIW2NkQAX/GZH4/xkYGBhhAmAOSBJEwDkgAQCCrgQEqRgDDwAAAABJRU5ErkJggg==);
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAH0lEQVQIW2NkQAX/GZH4/xkYGBhhAmAOSBJEwDkgAQCCrgQEqRgDDwAAAABJRU5ErkJggg==);
+}
+
+.instructions {
+  color: #00529B;
+  font-size: 32px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 2px solid;
+  background-color: #BDE5F8;
+  padding: 25px 25px 35px 25px;
+}
+
+.instructions>li,
+.instructions ul {
+  text-align: left;
+}
+
+.close-div {
+  right: 0;
+  cursor: pointer;
+  padding-right: 20px;
+  text-decoration: underline;
+}

@@ -1,0 +1,1 @@
+This game uses the Minimax algorithm and alpha-beta pruning to solve the game at a given difficulty level (as selected by the user). Parallel processing is achieved via Node's child_process module. 

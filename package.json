@@ -1,0 +1,24 @@
+{
+  "name": "Tic-Tac-Toe",
+  "version": "0.0.0",
+  "description": "A fun take on the traditional Tic-Tac-Toe game.",
+  "main": "server.js",
+  "repository": "",
+  "author": "Veronika Benkeser<veronika.benkeser@gmail.com>",
+  "dependencies": {
+    "async": "~0.2.8",
+    "express": "~3.2.4",
+    "socket.io": "^1.4.4"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^2.1.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-nodemon": "^0.4.1"
+  }
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=0.75">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Changa+One|Fredericka+the+Great|Codystar:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="all-content">
+    <div class='instructions hide'>
+      <ul>
+        <li>Initially, each player takes turns placing 3 movable pieces anywhere on the board.</li>
+        <li>After that, a piece can only be moved to an empty, adjacent square.</li>
+        <li>A player can't pass; he/she has to move when it's his/her turn.</li>
+      </ul>
+      <div class="close-div">GOT IT</div>
+    </div>
+    <div class="intro hide">
+
+      <div class="title">
+        <p>Movable</p>
+        <p>Tic-Tac-Toe</p>
+      </div>
+      <div class="intro-buttons">
+        <div class="myButton" id="rules-button">RULES</div>
+        <div class="myButton" id='start-button'>START</div>
+      </div>
+
+    </div>
+    <div class='setting1 hide'>
+      <div class="difficulty posted-note">
+
+        <p>Difficulty</p>
+        <div class="note-top left"></div>
+        <div class="level">
+          <div>n00b</div>
+          <div>expert</div>
+          <div>grandmaster</div>
+
+        </div>
+      </div>
+    </div>
+    <div class='setting2 hide'>
+      <div class="choice-bubble posted-note">
+        <div class="note-top right"></div>
+        <div class="selection" id="X">X</div>
+        <p>or</p>
+        <div class="selection" id="O">O</div>
+      </div>
+    </div>
+    <div class="playing-page hide">
+      <div class="grid">
+        <div class="row" id="1">
+
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="row" id="2">
+
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="row" id="3">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="message"></div>
+    <div class="restart posted-note hide">
+      <p>Restart</p>
+      <div class="note-top"></div>
+    </div>
+
+  </div>
+ <script data-main='/js/main' src="/require.js"></script>
+</body>
+
+</html>
