@@ -1,5 +1,5 @@
 {
-  "name": "Tic-Tac-Toe",
+  "name": "Movable Tic-Tac-Toe",
   "version": "0.0.0",
   "description": "A fun take on the traditional Tic-Tac-Toe game.",
   "main": "server.js",
@@ -8,7 +8,7 @@
   "dependencies": {
     "async": "~0.2.8",
     "express": "~3.2.4",
-    "socket.io": "https://registry.npmjs.org/socket.io/-/socket.io-1.3.7.tgz"
+    "socket.io": "https://registry.npmjs.org/socket.io/-/socket.io-1.4.4.tgz"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
